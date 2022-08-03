@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import  List  from './PortList'
-import { Services, PortBtn, Flex, PortImg } from './Styled'
+import { Services, PortBtn, Flex, Btn, PortImg, Wrapper } from './Styled'
 import '../App.css'
 
 const btns = [ 'All', 'Web Design', 'Mobile Design']
@@ -32,8 +32,8 @@ const Portfolio = () => {
   }
   return (
     <div>
-      <React.Fragment>
-        <Services className='serve'>
+      <Wrapper>
+        <Services className='serve' id='portfolio'>
           <h3>Portfolio</h3>
           <small className='small'>Here is a list of some of the projects have been able to design which consists of a fintech mobile app, a coffee shop application, a web landing page.</small>
           <Flex>
@@ -56,9 +56,9 @@ const Portfolio = () => {
         </Flex>
 
         <div classNames="btn">
-          <button>View All</button>
+          <a target='_blank' rel="noopener noreferrer" href="http://www.behance.net/opatolastephen01"><Btn>View More</Btn></a>
         </div>
-      </React.Fragment>
+      </Wrapper>
     </div>
   )
 }

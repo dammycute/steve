@@ -12,6 +12,10 @@ export const Btn = styled.button`
     }
 `
 
+export const Wrapper = styled.section`
+  margin: 5rem 0;
+`
+
 export const Flex = styled.div`
   display: flex;
   justify-content: space-evenly;
@@ -20,6 +24,39 @@ export const Flex = styled.div`
   align-items: center;
 
   
+`
+
+export const HeaderText = styled.div`
+    display: flex;
+    flex-wrap: wrap-reverse;
+    row-gap: 2rem;
+
+    .header-text{
+      display: block;
+      width: 100%;
+      max-width: 600px;
+      
+      @media screen and (max-width: 480px) {
+        p{
+          font-size: 18px;
+        }
+        h3{
+          font-size: 1.7rem;
+        }
+      }
+
+    }
+
+    img{
+      width: 100%;
+      max-width: 500px;
+      margin-top: -70px;
+      @media screen and (max-width: 480px) {
+        margin-top: -30px;
+        max-height: 300px;
+        max-width: 300px;
+      }
+    }
 `
 
 
@@ -73,6 +110,7 @@ export const PortImg = styled.img`
   max-width: 300px;
   height: 250px;
   margin-bottom: 3rem;
+  border-radius: 5px;
 `
 
 
@@ -84,6 +122,16 @@ export const Get = styled.div`
     color: #8E8787;
   }
 
+  @media screen and (max-width: 480px) {
+    small{
+      font-size: 8px;
+    }
+
+    img{
+      width: 20px;
+    }
+  }
+
 `
 
 export const PortBtn = styled.div`
@@ -93,6 +141,13 @@ export const PortBtn = styled.div`
   padding: 7px 18px;
   margin-top: 10px;
   cursor: pointer;
+
+  @media screen and (max-width: 480px) {
+    padding: 7px 12px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 12px;
+  }
 
   ${({active})  => 
   active && `

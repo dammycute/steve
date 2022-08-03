@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex, ServiceDiv, Services } from './Styled'
+import { Flex, ServiceDiv, Services, Wrapper } from './Styled'
 import web from '../steve-img/web.png'
 import phone from '../steve-img/Phone.png'
 import creative from '../steve-img/creative.png'
@@ -23,8 +23,8 @@ const services = [
 
 const Service = () => {
   return (
-    <React.Fragment>
-      <Services className='serve'>
+    <Wrapper>
+      <Services className='serve' id='service'>
         <h3>Services</h3>
         <span></span>
         <small className='small'>We render services like web design,  Mobile app design, creative design. We also make sure we render the best user experience you can ever get.</small>
@@ -40,7 +40,7 @@ const Service = () => {
         )}
 
       </Flex>
-    </React.Fragment>
+    </Wrapper>
   )
 }
 

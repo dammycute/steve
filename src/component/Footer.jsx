@@ -1,11 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import mail from '../steve-img/mail.png'
-import linkedin from '../steve-img/linkedin.png'
-import behance from '../steve-img/behance.png'
-import twitter from '../steve-img/twitter.png'
-
-const Img = [mail, linkedin, behance, twitter]
+import {foot} from './footList'
 
 
 const Foot = styled.div`
@@ -37,8 +32,8 @@ const Footer = () => {
       <Foot>
         <p>&copy; 2022. All right reserved.</p>
         <ImgFlex>
-          {Img.map(img =>(
-            <img src={img} alt='Social'/>
+          {foot.map(item =>(
+            <a href={item.link}><img src={item.img} alt='Social'/></a>
           ))}
         </ImgFlex>
       </Foot>

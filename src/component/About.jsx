@@ -24,14 +24,11 @@ const Flex = styled.div`
     max-width: 700px;
     line-height: 1.5;
 }
-
-  
 `
 
 const About = () => {
   return (
-    <React.Fragment>
-      <Flex>
+      <Flex id='about'>
           <img src={steveImg} alt="" />
           <div className="about-text">
             <h3>About Me</h3>
@@ -43,7 +40,6 @@ const About = () => {
             <Btn>Download Resume</Btn>
           </div>
         </Flex>
-    </React.Fragment>
   )
 }
 

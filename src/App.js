@@ -11,6 +11,7 @@ import Touch from "./component/Touch";
 function App() {
 	return (
 		<React.Fragment>
+			
 			<div className="container">
 				<Hero />
 				<About />
